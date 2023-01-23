@@ -8,6 +8,15 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
     <title>Move website</title>
+    <!-- google font link  -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Manrope:wght@800&family=Open+Sans&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
 
     <!-- Tailwind Css link -->
     <script
@@ -20,7 +29,11 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
+                    },
+                    fontFamily: {
+                        babas: ['Bebas Neue', 'cursive'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
                 }
             }
         }
@@ -29,7 +42,24 @@
 </head>
 
 <body>
-
+    <!-- header section start -->
+    <header>
+        <nav
+            class="flex justify-between h-14 items-center  max-w-7xl m-auto h-100 p-5">
+            <h1 class="font-babas text-2xl">
+                Jhaka
+                Naka
+                Production</h1>
+            <ul
+                class="flex gap-10 font-montserrt">
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section end -->
 </body>
 
 </html>

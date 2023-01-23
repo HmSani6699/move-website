@@ -28,7 +28,9 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        yellow: '#FECC02',
+                        black: '#131313',
+                        gray: '#4E4E4E',
                     },
                     fontFamily: {
                         babas: ['Bebas Neue', 'cursive'],
@@ -45,19 +47,55 @@
     <!-- header section start -->
     <header>
         <nav
-            class="flex justify-between h-14 items-center  max-w-7xl m-auto h-100 p-5">
-            <h1 class="font-babas text-2xl">
-                Jhaka
-                Naka
-                Production</h1>
-            <ul
-                class="flex gap-10 font-montserrt">
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
+            class="h-20 fixed top-0 left-0 right-0  bg-white">
+            <div
+                class="flex justify-between items-center  max-w-7xl m-auto h-20 p-5 ">
+                <h1 class="font-babas text-2xl">
+                    Jhaka
+                    Naka
+                    Production</h1>
+                <ul
+                    class="flex gap-10 font-montserrt">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
         </nav>
+        <section
+            class="h-screen w-full bg-[url('./images/banner.jpg')] bg-cover pt-20">
+            <div
+                class="max-w-7xl m-auto p-5 flex items-center h-full w-full">
+                <div class="">
+                    <p
+                        class="font-babas text-xl text-white">
+                        Movie
+                        production studio</p>
+                    <h1
+                        class="font-babas text-7xl text-white">
+                        Films
+                        MAde to</h1>
+                    <h1
+                        class="text-yellow text-7xl font-babas">
+                        Perfection</h1>
+                    <p
+                        class="font-montserrt text-white">
+                        Lorem ipsum dolor sit
+                        amet,
+                        consectetur adipiscing
+                        elit.
+                        Ut
+                        elit tellus, <br>
+                        luctus nec ullamcorper
+                        mattis,
+                        pulvinar dapibus leo.</p>
+                    <button
+                        class="border-2 border-white mt-8 px-5 py-3 text-white font-bold hover:bg-yellow hover:text-black transition-all hover:border-yellow rounded">Discover
+                        More</button>
+                </div>
+            </div>
+        </section>
     </header>
     <!-- header section end -->
 </body>
